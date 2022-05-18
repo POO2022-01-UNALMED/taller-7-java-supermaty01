@@ -27,7 +27,7 @@ public class Fabula extends Escrito {
 	}
 
 	public int palabrasTotales(int par) {
-		return super.getPaginas() * par;
+		return super.getPaginas() * par * 1;
 	}
 
 	public String interpretacion() {
@@ -35,6 +35,7 @@ public class Fabula extends Escrito {
 	}
 
 	public String toString() {
-        return String.format("%s\n%s\n%d\n%s", super.getOrigen(), super.getTitulo(), super.getAutor(), super.getPaginas(), this.ensenanza);
+		return super.getOrigen() + "\n" + super.getTitulo() + "\n" + super.getAutor() + "\n" + super.getPaginas() + "\n"
+				+ this.ensenanza;
 	}
 }
